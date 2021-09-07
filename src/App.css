@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: antiquewhite;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+    margin: 5px;
+    font-size: 2rem;
+    color: purple;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listTodo {
+    list-style: '⇝';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.listTodo ::marker {
+    color: purple;
+    font-size: 1.5rem;
+    margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.listTodo .itemTodo {
+    margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listTodo .btnCompleteTodo {
+    padding: 7px;
+    border: 3px solid purple;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: violet;
+    background-color: black;
+    margin: 0 5px;
+}
+
+.formTodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formTodo .inputTodo {
+    border: 1px solid purple;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    background-color: violet;
+    border-radius: 10px;
+}
+
+.formTodo .btnAddTodo {
+    padding: 5px;
+    border: 3px solid purple;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: violet;
+    background-color: black;
+    margin: 3px;
 }
